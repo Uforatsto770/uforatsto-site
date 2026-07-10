@@ -75,7 +75,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdro
 .nav-right{display:flex;align-items:center;gap:12px}
 .lang button{border:none;background:transparent;font:inherit;font-weight:600;color:var(--muted);cursor:pointer;padding:4px 9px;border-radius:99px;font-size:.82rem}
 .lang button.active{background:#4b4b52;color:#fff}
-.btn{display:inline-block;padding:11px 24px;border-radius:980px;font-weight:600;font-size:.92rem;transition:.15s;cursor:pointer;border:none}
+.btn{display:inline-block;padding:11px 24px;border-radius:980px;font-weight:600;font-size:.92rem;transition:.15s;cursor:pointer;border:none;white-space:nowrap}
 .btn-primary{background:#4b4b52;color:#fff}
 .btn-primary:hover{background:#37373d}
 .btn-outline{background:transparent;color:var(--text);border:1px solid var(--hair)}
@@ -167,6 +167,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   .contact-grid,.loc-flex{grid-template-columns:1fr}
   .hero{padding:70px 0 58px}
   section{padding:60px 0}
+}
+@media(max-width:480px){
+  .nav{gap:8px;height:58px}
+  .logo{font-size:.85rem;letter-spacing:.02em}
+  .logo .tag{font-size:.5rem;letter-spacing:.18em}
+  .lang{display:flex}
+  .lang button{padding:3px 7px;font-size:.78rem}
+  .nav .btn{padding:8px 14px;font-size:.8rem}
 }
 </style>
 </head>
