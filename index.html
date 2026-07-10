@@ -294,37 +294,60 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         </div>
       </div>
       <div class="map-card">
-        <svg viewBox="0 0 380 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kingston to New York City — about 2 hours via I-87">
+        <svg viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Freight corridors from Kingston, NY: Port of Albany 55 mi, New York City 100 mi, Port Newark–Elizabeth 95 mi, JFK Air Cargo 110 mi">
           <!-- hudson river -->
-          <path d="M 205 6 C 190 60, 225 110, 205 165 C 188 215, 215 270, 200 324" fill="none" stroke="#c7d4e4" stroke-width="14" stroke-linecap="round"/>
-          <!-- I-87 route -->
-          <path d="M 118 42 C 100 120, 150 190, 165 240 C 175 272, 190 288, 214 300" fill="none" stroke="#3b6ea5" stroke-width="3" stroke-dasharray="1 8" stroke-linecap="round"/>
+          <path d="M 190 14 C 178 70, 208 120, 198 180 C 188 240, 228 305, 212 368" fill="none" stroke="#c7d4e4" stroke-width="13" stroke-linecap="round"/>
           <!-- secondary roads -->
-          <path d="M 40 140 C 110 130, 240 150, 350 120" fill="none" stroke="#dfe3e9" stroke-width="2"/>
-          <path d="M 30 230 C 120 215, 250 245, 355 215" fill="none" stroke="#dfe3e9" stroke-width="2"/>
+          <path d="M 30 120 C 110 112, 240 128, 355 104" fill="none" stroke="#e3e7ec" stroke-width="2"/>
+          <path d="M 26 254 C 120 242, 250 266, 358 242" fill="none" stroke="#e3e7ec" stroke-width="2"/>
+          <!-- route: Kingston -> Port of Albany -->
+          <path d="M 110 150 C 115 110, 135 72, 165 48" fill="none" stroke="#8aa5c2" stroke-width="2.2" stroke-dasharray="1 7" stroke-linecap="round"/>
+          <!-- route: Kingston -> NYC (I-87, main) -->
+          <path d="M 110 150 C 100 210, 150 270, 168 300 C 178 322, 198 340, 216 350" fill="none" stroke="#3b6ea5" stroke-width="3" stroke-dasharray="1 8" stroke-linecap="round"/>
+          <!-- route: Kingston -> Port Newark -->
+          <path d="M 110 150 C 86 218, 106 296, 168 332" fill="none" stroke="#8aa5c2" stroke-width="2.2" stroke-dasharray="1 7" stroke-linecap="round"/>
+          <!-- route: Kingston -> JFK -->
+          <path d="M 110 150 C 158 202, 258 250, 292 316 C 300 336, 302 362, 299 382" fill="none" stroke="#8aa5c2" stroke-width="2.2" stroke-dasharray="1 7" stroke-linecap="round"/>
           <!-- I-87 shield -->
-          <g transform="translate(96 148)">
+          <g transform="translate(92 240)">
             <rect x="-20" y="-13" rx="6" width="40" height="26" fill="#ffffff" stroke="#c9cdd4" stroke-width="1.4"/>
             <text x="0" y="5" text-anchor="middle" font-family="Inter,Arial" font-size="12" font-weight="600" fill="#3b6ea5">I-87</text>
           </g>
+          <!-- Port of Albany -->
+          <g transform="translate(165 48)">
+            <circle r="8" fill="#ffffff" stroke="#3b6ea5" stroke-width="1.5"/>
+            <text y="3.5" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#3b6ea5">⚓</text>
+            <text x="14" y="-1" font-family="Inter,Arial" font-size="11.5" font-weight="600" fill="#1d1d1f">Port of Albany</text>
+            <text x="14" y="13" font-family="Inter,Arial" font-size="10" fill="#6e6e73">≈ 1 hr • 55 mi</text>
+          </g>
           <!-- Kingston pin -->
-          <g transform="translate(118 42)">
+          <g transform="translate(110 150)">
             <circle r="9" fill="#1d1d1f"/>
             <circle r="3.4" fill="#ffffff"/>
             <text x="17" y="-2" font-family="Inter,Arial" font-size="13.5" font-weight="700" fill="#1d1d1f">Kingston, NY</text>
             <text x="17" y="14" font-family="Inter,Arial" font-size="10" fill="#6e6e73">UFORATSTO INC</text>
           </g>
           <!-- NYC pin -->
-          <g transform="translate(214 300)">
-            <circle r="24" fill="none" stroke="#b9c5d4" stroke-width="1.3"/>
+          <g transform="translate(220 352)">
+            <circle r="23" fill="none" stroke="#b9c5d4" stroke-width="1.3"/>
             <circle r="8" fill="#ffffff" stroke="#1d1d1f" stroke-width="1.6"/>
             <circle r="3" fill="#1d1d1f"/>
-            <text x="-12" y="-36" font-family="Inter,Arial" font-size="12.5" font-weight="700" fill="#1d1d1f">New York City</text>
+            <text x="14" y="-30" font-family="Inter,Arial" font-size="12.5" font-weight="700" fill="#1d1d1f">New York City</text>
+            <text x="14" y="-16" font-family="Inter,Arial" font-size="10" fill="#6e6e73">≈ 2 hrs • 100 mi</text>
           </g>
-          <!-- 2h badge -->
-          <g transform="translate(268 168)">
-            <rect x="-48" y="-15" rx="15" width="96" height="30" fill="#ffffff" stroke="#c9cdd4" stroke-width="1.2"/>
-            <text x="0" y="5" text-anchor="middle" font-family="Inter,Arial" font-size="12.5" font-weight="600" fill="#3b6ea5">≈ 2 hrs</text>
+          <!-- Port Newark–Elizabeth -->
+          <g transform="translate(168 332)">
+            <circle r="8" fill="#ffffff" stroke="#3b6ea5" stroke-width="1.5"/>
+            <text y="3.5" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#3b6ea5">⚓</text>
+            <text x="-13" y="-1" text-anchor="end" font-family="Inter,Arial" font-size="11.5" font-weight="600" fill="#1d1d1f">Port Newark–Elizabeth</text>
+            <text x="-13" y="13" text-anchor="end" font-family="Inter,Arial" font-size="10" fill="#6e6e73">≈ 1 h 45 m • 95 mi</text>
+          </g>
+          <!-- JFK Air Cargo -->
+          <g transform="translate(299 394)">
+            <circle r="8" fill="#ffffff" stroke="#3b6ea5" stroke-width="1.5"/>
+            <text y="3.5" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#3b6ea5">✈</text>
+            <text x="0" y="30" text-anchor="middle" font-family="Inter,Arial" font-size="11.5" font-weight="600" fill="#1d1d1f">JFK Air Cargo</text>
+            <text x="0" y="44" text-anchor="middle" font-family="Inter,Arial" font-size="10" fill="#6e6e73">≈ 2 h 15 m • 110 mi</text>
           </g>
         </svg>
       </div>
