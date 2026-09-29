@@ -128,6 +128,8 @@ h2{color:var(--text);font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:700;letter
 .loc-points > div:last-child{border-bottom:none}
 .loc-points h3{color:var(--text);font-size:1rem;font-weight:700;margin-bottom:5px;letter-spacing:-.01em}
 .loc-points p{font-size:.92rem;color:var(--muted)}
+.loc-addr{margin-top:14px;font-size:.95rem;color:var(--text);font-weight:600}
+.loc-addr span{color:var(--muted);font-weight:500}
 .map-card{background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius);padding:20px}
 /* pricing */
 .prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-bottom:32px}
@@ -327,6 +329,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <div class="kicker" data-i18n="loc_kicker">Our location</div>
       <h2 data-i18n="loc_h2">Kingston, NY: big-city reach without big-city traffic</h2>
       <p class="lead" data-i18n="loc_lead">We ship from the Hudson Valley — where trucks arrive, load and leave on schedule, not stuck in city gridlock.</p>
+      <p class="loc-addr"><span data-i18n="loc_addr">Warehouse:</span> 80-88 Boices Lane, Building 33, Kingston, NY 12401</p>
     </div>
     <div class="loc-flex">
       <div class="loc-points">
@@ -518,7 +521,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <footer>
   <div class="wrap">
     <div>© 2023–2026 UFORATSTO INC</div>
-    <div data-i18n="ft_tag">Kingston, New York • 3PL Fulfillment &amp; U.S. Market Entry</div>
+    <div>80-88 Boices Lane, Building 33, Kingston, NY 12401 • <span data-i18n="ft_tag">3PL Fulfillment &amp; U.S. Market Entry</span></div>
     <div class="ft-meaning" data-i18n="ft_name">Uforatsto (ופרצת) is Hebrew for “spread light” — helping your business break through and shine in a new market.</div>
   </div>
 </footer>
@@ -553,7 +556,7 @@ en:{
   why3_h:"Personal manager",why3_p:"You talk to the same person every time — in English, Russian or Ukrainian.",
   why4_h:"Built for newcomers",why4_p:"We specialize in sellers entering the U.S. market and know every step of that journey first-hand.",
   loc_kicker:"Our location",loc_h2:"Kingston, NY: big-city reach without big-city traffic",
-  loc_lead:"We ship from the Hudson Valley — where trucks arrive, load and leave on schedule, not stuck in city gridlock.",
+  loc_lead:"We ship from the Hudson Valley — where trucks arrive, load and leave on schedule, not stuck in city gridlock.",loc_addr:"Warehouse:",
   loc1_h:"Faster dock-to-carrier",loc1_p:"No NYC congestion, no loading-dock queues. Your inventory moves the day it's supposed to move.",
   loc2_h:"All major carriers here",loc2_p:"Daily FedEx, UPS and USPS pickups right in Kingston, plus LTL and freight along the I-87 corridor.",
   loc3_h:"NYC metro next door",loc3_p:"About two hours from New York City: the same shipping zones — with upstate operating costs, which keeps your rates lower.",
@@ -575,7 +578,7 @@ en:{
   ct_h2:"Get your quote",ct_lead:"Tell us what you sell — we'll reply within one business day with clear numbers.",
   ct_addr_l:"Address",
   f_name:"Your name",f_email:"Email",f_what:"What do you sell & approximate volumes",f_send:"Send request",
-  ft_tag:"Kingston, New York • 3PL Fulfillment & U.S. Market Entry",
+  ft_tag:"3PL Fulfillment & U.S. Market Entry",
   ft_name:"Uforatsto (ופרצת) is Hebrew for “spread light” — helping your business break through and shine in a new market."
 },
 ru:{
@@ -606,7 +609,7 @@ ru:{
   why3_h:"Персональный менеджер",why3_p:"Вы всегда общаетесь с одним и тем же человеком — на русском, украинском или английском.",
   why4_h:"Для тех, кто начинает",why4_p:"Мы специализируемся на продавцах, выходящих на рынок США, и знаем этот путь на собственном опыте.",
   loc_kicker:"Наша локация",loc_h2:"Кингстон, штат Нью-Йорк: охват мегаполиса — без его пробок",
-  loc_lead:"Мы отгружаем из долины Гудзона — здесь фуры приходят, грузятся и уходят по расписанию, а не стоят в городских заторах.",
+  loc_lead:"Мы отгружаем из долины Гудзона — здесь фуры приходят, грузятся и уходят по расписанию, а не стоят в городских заторах.",loc_addr:"Склад:",
   loc1_h:"Быстрее от склада до перевозчика",loc1_p:"Ни нью-йоркских пробок, ни очередей у погрузочных доков. Ваш товар уезжает в тот день, когда должен.",
   loc2_h:"Все основные перевозчики",loc2_p:"Ежедневные заборы FedEx, UPS и USPS прямо в Кингстоне, плюс LTL и фрахт по коридору трассы I-87.",
   loc3_h:"Нью-Йорк — рядом",loc3_p:"Около двух часов до Нью-Йорка: те же зоны доставки, но издержки апстейта — поэтому и ваши тарифы ниже.",
@@ -628,7 +631,7 @@ ru:{
   ct_h2:"Получите расчёт",ct_lead:"Расскажите, что вы продаёте, — ответим в течение рабочего дня с конкретными цифрами.",
   ct_addr_l:"Адрес",
   f_name:"Ваше имя",f_email:"Email",f_what:"Что продаёте и примерные объёмы",f_send:"Отправить заявку",
-  ft_tag:"Кингстон, Нью-Йорк • 3PL-фулфилмент и выход на рынок США",
+  ft_tag:"3PL-фулфилмент и выход на рынок США",
   ft_name:"Uforatsto (ופרצת) — на иврите «распространяй свет»: помогаем вашему бизнесу прорваться и засиять на новом рынке."
 }};
 const btns=document.querySelectorAll('[data-lang]');
